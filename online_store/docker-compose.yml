@@ -39,4 +39,4 @@ volumes:
   postgres_data:
   static_volume:
   media_volume:
-  docker-compose.yml
+  docker-compose.yml:
