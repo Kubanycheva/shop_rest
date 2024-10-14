@@ -123,6 +123,7 @@ class CartItemSerializer(serializers.ModelSerializer):
         model = CarItem
         fields = ['id', 'product', 'product_id', 'quantity', 'get_total_price' ]
 
+
 class CartSerializer(serializers.ModelSerializer):
     items = CartItemSerializer(many=True, read_only=True)
     total_price = serializers.SerializerMethodField()
